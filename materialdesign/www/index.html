@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+    </head>
+    <!--Desde 2009, o q ha de mais top para programação web e mobile hibrida é um framework chamado ANGULAR
+    Mantido pelo google, gratuito.-->
+    <body>
+        <header>
+            <div>
+
+            </div>
+        </header>
+
+        <section>
+            <div data-ng-view>
+
+            </div>
+        </section>
+
+        <!--Importamos o framework angular-->
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/angular-route.min.js"></script>
+        <script src="application/app.js"></script>
+
+        <!--Importamos os controllers-->
+        <script src="application/controllers/homeController.js"></script>
+        <script src="application/controllers/clienteController.js"></script>
+
+    </body>
+</html>
