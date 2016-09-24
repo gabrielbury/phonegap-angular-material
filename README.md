@@ -1,0 +1,1 @@
+phonegap-angular-github
