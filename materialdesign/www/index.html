@@ -3,13 +3,23 @@
     <head>
         <title></title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/angular-material.min.css">
     </head>
     <!--Desde 2009, o q ha de mais top para programação web e mobile hibrida é um framework chamado ANGULAR
     Mantido pelo google, gratuito.-->
     <body>
         <header>
             <div>
-
+                <md-toolbar class="md-hue-2">
+                    <div class="md-toolbar-tools">
+                        <md-button class="md-icon-button" aria-label="Settings">
+                            <ng-md-icon icon="menu" style="fill: white" size="24"></ng-md-icon>
+                        </md-button>
+                        <h2>
+                            <span>SisClientes - ONP</span>
+                        </h2>
+                    </div>
+                </md-toolbar>
             </div>
         </header>
 
@@ -22,6 +32,11 @@
         <!--Importamos o framework angular-->
         <script src="scripts/angular.min.js"></script>
         <script src="scripts/angular-route.min.js"></script>
+        <script src="scripts/angular-animate.min.js"></script>
+        <script src="scripts/angular-aria.min.js"></script>
+        <script src="scripts/angular-messages.min.js"></script>
+        <script src="scripts/angular-material.min.js"></script>
+        <script src="scripts/angular-material-icons.min.js"></script>
         <script src="application/app.js"></script>
 
         <!--Importamos os controllers-->
@@ -30,3 +45,14 @@
 
     </body>
 </html>
+<!--Quando trabalhamos com angular criamos uma página PAI principal e dentro dela abrimos as paginas secundarias
+    Isso no mercadoé chamado de SPA (SINGLE PAGE APPLICATION)
+    SPA é um estilo de desenvolvimento
+-->
+
+<!--O google percebendo que os aplicativos android tinham aparencia diferente (cada um de 1 jeito)
+    resolveu padronizar o visual dos aplicativos chamada google material design
+    que nada mais é do que um conjunto de boas praticas e tecnicas de design pra deixar os apps com a mesma
+    cara.
+    Foi inspirado no dia-a-dia, com componentes, recursos que possuem bordas, tem animações, sombras...
+-->
